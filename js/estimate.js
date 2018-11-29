@@ -11,7 +11,7 @@ var warning = document.getElementById('warning');
 document.getElementById('save').addEventListener('click', function(){
   return t.set('card', 'shared', 'ubv', ubvSelector.value)
   .then(function(){
-    return t.set('card', 'shared',  'js', jsSelector.value)
+    return t.set('card', 'shared',  'complexity', jsSelector.value)
   })
   .then(function(){
     var wsjfval = (ubvSelector.value/jsSelector.value)
@@ -30,7 +30,7 @@ var wsjf = 0;
 t.render(function(){
   return Promise.all([
     t.get('card', 'shared', 'ubv'),
-    t.get('card', 'shared', 'js'),
+    t.get('card', 'shared', 'complexity'),
     t.get('card', 'shared', 'wsjf'),
     
     ])
