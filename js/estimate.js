@@ -2,7 +2,7 @@
 var Promise = TrelloPowerUp.Promise;
 var t = TrelloPowerUp.iframe();
 var ubvSelector = document.getElementById('ubv');
-var jsSelector = document.getElementById('js');
+var jsSelector = document.getElementById('complexity');
 var wsjfCalc = document.getElementById('wsjf');
 var warning = document.getElementById('warning');
 
