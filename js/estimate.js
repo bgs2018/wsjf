@@ -37,7 +37,7 @@ t.render(function(){
   .spread(function(savedUbv, savedWsjf){
     
      ubvSelector.value = savedUbv;
-     jsSelector.value = savedJs;
+     /*jsSelector.value = savedJs;*/
      wsjfCalc.innerHTML = savedWsjf; 
     
   })
