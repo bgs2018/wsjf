@@ -34,10 +34,10 @@ t.render(function(){
     t.get('card', 'shared', 'wsjf'),
     
     ])
-  .spread(function(savedUbv, savedWsjf){
+  .spread(function(savedUbv, savedJs, savedWsjf){
     
      ubvSelector.value = savedUbv;
-     /*jsSelector.value = savedJs;*/
+     jsSelector.value = savedJs;
      wsjfCalc.innerHTML = savedWsjf; 
     
   })
