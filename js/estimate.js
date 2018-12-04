@@ -16,7 +16,7 @@ document.getElementById('save').addEventListener('click', function(){
   .then(function(){
     var wsjfval = (ubvSelector.value/jsSelector.value)
     /*return t.set('card', 'shared',  'wsjf', (parseFloat(Math.round(wsjfval) * 100) / 10000).toFixed(2))*/
-    return t.set('card', 'shared',  'wsjf', wsjfval)
+    return t.set('card', 'shared',  'wsjf', wsjfval*100)
   
   })
   .then(function(){
