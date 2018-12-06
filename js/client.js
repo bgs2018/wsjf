@@ -21,7 +21,8 @@ TrelloPowerUp.initialize({
 	},
   'card-badges': function(t, options) {
     return t.get('card', 'shared',  'wsjf')
-    .then(function(wsjf) {	
+    .then(function(wsjf) {
+      /* requirement is to only show WSJF on front of card if it's been calculated, if not yet WSJFed card should be in appropriate column - this may end up getting reverted to original code once we have values */
       if !(wsjf===null){
         return [{
           icon:  WHITE_ROCKET_ICON,
