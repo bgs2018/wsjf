@@ -33,6 +33,16 @@ TrelloPowerUp.initialize({
     };
   });
           },
+   'card-badges': function(t, options){
+	   return t.get('card', 'shared', 'complexity')
+	   .then(function(complexity){
+		   if (complexity !== null){
+			   return [{
+		              text: complexity
+			   }]
+		   }
+	   }
+   },
    'card-detail-badges': function(t, options) {
     return t.get('card', 'shared',  'wsjf')
     .then(function( wsjf) {
