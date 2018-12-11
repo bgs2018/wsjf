@@ -40,6 +40,7 @@ t.render(function(){
      ubvSelector.value = savedUbv;
      jsSelector.value = savedJs;
      wsjfCalc.innerHTML = savedWsjf; 
+     jsSelector.innerHTML = savedJs;
     
   })
   .then(function(){
